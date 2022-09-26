@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Xóa tour</title>
+</head>
+<div class="container" style="width: 500px">
+  <br>
+  <br>
+  <h2>Xóa Tour</h2>
+  <br>
+  <p>Tour {{tour.title}}</p>
+  <br>
+  <p> Giá: {{tour.price}}</p>
+  <br>
+  <p>Giới thiệu : {{tour.description}} </p>
+  <br>
+  <button (click)="delete()">Xóa</button>
+  &nbsp;
+  <button><a routerLink="" type="submit" class="btn btn-info">Hủy</a></button>
+</div>

@@ -1,0 +1,10 @@
+#display {
+  width: 400px;
+  border: 1px solid;
+  border-collapse: collapse;
+  margin-left: 450px;
+}
+#display tr, #display th, #display td {
+  border: 1px solid;
+  border-collapse: collapse;
+}

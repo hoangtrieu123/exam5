@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Thêm mới</title>
+</head>
+<table>
+  <div class="container" style="width: 500px">
+    <h2>Thêm Tour</h2>
+    <form [formGroup]="createForm" (ngSubmit)="create()">
+      <tr>
+        <td><label>Tên Tour</label></td>
+        <td><input placeholder="Tên Tour" formControlName="title"></td>
+
+      </tr>
+      <label>Giá</label>
+      <input class="form-control" placeholder="Nhập Giá" formControlName="price"> <br>
+      <label>Mô Tả</label> <br>
+      <input style="height: 200px" class="form-control" placeholder="Nhập mô tả" formControlName="description">
+      <br>
+      <button type="submit">Thêm mới</button>
+      <a routerLink="" type="submit">Hủy</a>
+    </form>
+  </div>
+</table>
+

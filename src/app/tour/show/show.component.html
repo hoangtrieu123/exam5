@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Danh sách tour</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+<div>
+  <div >
+    <div >
+      <div >
+        <div >
+          <div >
+            <h2>List Tour</h2>
+          </div>
+        </div>
+      </div>
+      <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+          <th>
+            #
+          </th>
+          <th>Tour</th>
+          <th>Giá</th>
+          <th >Edit</th>
+          <th >Action</th>
+        </tr>
+        </thead>
+        <tbody *ngFor="let t of tours,index as i">
+        <tr>
+          <td>
+            {{i+1}}
+          </td>
+          <td><a [routerLink]="'view/'+t.id">{{t.title}}</a></td>
+          <td>{{t.price}}</td>
+          <td>{{t.description}}</td>
+          <td><button type="button" [routerLink]="'edit/'+t.id">Edit</button></td>
+          <td><button type="button"  [routerLink]="'delete/'+t.id">Delete</button></td>
+        </tr>
+        </tbody>
+        <div>
+         <button><a routerLink="create" > <span>Thêm</span></a></button>
+        </div>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
